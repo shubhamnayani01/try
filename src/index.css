@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --maroon: #7A1F2B;
+    --gold: #D4AF37;
+    --cream: #FFF8EE;
+    --beige: #F5EBDD;
+    --emerald: #2F6F4F;
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', 'Georgia', serif;
+    --font-sans: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  body {
+    background-color: #FFF8EE;
+    color: #332219;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif, .serif, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+.motif-bg {
+  background-image: radial-gradient(#D4AF37 0.7px, transparent 0.7px);
+  background-size: 20px 20px;
+  opacity: 0.12;
+}
+
+.gold-border {
+  border: 1px solid #D4AF37;
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #7A1F2B 0%, #5A161F 100%);
+}
+
+.shadow-premium {
+  box-shadow: 0 10px 30px rgba(122, 31, 43, 0.08);
+}
+
+.curve-divider {
+  border-radius: 100% 100% 0 0 / 20% 20% 0 0;
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 35%, #FFF0AA 50%, #D4AF37 70%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #D4AF37, #F3E5AB, #996515) 1;
+}
+
+.ivory-card {
+  background: #FFFDF9;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 10px 30px rgba(122, 31, 43, 0.05);
+}
+
+.festive-gold-glow {
+  box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.25);
+}
+
+.royal-maroon-glow {
+  box-shadow: 0 12px 35px -8px rgba(122, 31, 43, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF8EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7A1F2B;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes skeletonShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-shimmer {
+  animation: skeletonShimmer 1.8s infinite linear;
+}
+
+

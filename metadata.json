@@ -1,0 +1,6 @@
+{
+  "name": "MH Sweets",
+  "description": "MH Sweets - Nakhatrana, Bhuj, Kachchh, Gujarat 370605. Authentic Kutch Gulab Pak, Kesar Peda, Mesub, and Desi Ghee Mithais Est. 1955.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
